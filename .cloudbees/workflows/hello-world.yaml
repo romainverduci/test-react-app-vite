@@ -2,7 +2,7 @@ apiVersion: automation.cloudbees.io/v1alpha1
 kind: workflow
 name: My workflow
 on:
-  pull_request:
+  push:
     branches:
       - main
 jobs:
@@ -12,5 +12,5 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          sleep 30
+          sleep 20
           echo "hello world !"
