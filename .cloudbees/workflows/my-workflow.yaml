@@ -10,5 +10,4 @@ jobs:
         uses: docker://golang:1.20.3-alpine3.17
         shell: sh
         run: |
-          sleep 20
           echo "hello world"
